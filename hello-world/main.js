@@ -31,3 +31,8 @@ camera.position.z = 5
 
 // initialize the renderer (this displays the 3d content)
 const canvas = document.querySelector('canvas.threejs')
+const renderer = new THREE.WebGL1Renderer({
+  canvas:canvas
+})
+
+renderer.render(scene, camera)
